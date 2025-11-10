@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delex — About</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        /* ==== Color & layout variables ==== */
+        :root {
+            --brand: #ff6a00;   /* Orange accent color */
+            --ink: #121212;     /* Main text color */
+            --muted: #6b7280;   /* Secondary text color */
+            --bg: #ffffff;      /* Background color */
+            --ring: #ececec;    /* Border color */
+            --max: 1200px;      /* Max width for layout */
+        }
+
+        /* ==== Base styles ==== */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Inter, sans-serif;
+            color: var(--ink);
+            background: var(--bg);
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        /* ==== Layout container ==== */
+        .wrap {
+            max-width: var(--max);
+            margin: auto;
+            padding: 0 24px;
+        }
+
+        /* ==== Header section ==== */
+        .site-header {
+            position: sticky;
+            top: 0;
+            background: var(--bg);
+            border-bottom: 1px solid var(--ring);
+            z-index: 10;
+        }
+
+        .head-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            min-height: 72px;
+        }
+
+        .brand {
+            font-family: Rajdhani, sans-serif;
+            font-weight: 700;
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+        }
+
+        .brand .dot {
+            width: 10px;
+            height: 10px;
+            background: var(--brand);
+            border-radius: 50%;
+            margin-left: 8px;
+        }
+
+        /* ==== Navigation menu ==== */
+        .nav {
+            display: flex;
+            gap: 28px;
+        }
+
+        .nav a {
+            font-weight: 600;
+            opacity: 0.85;
+        }
+
+        .nav a:hover {
+            opacity: 1;
+        }
+
+        .nav .active {
+            color: var(--brand);
+            position: relative;
+        }
+
+        .nav .active::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -8px;
+            height: 3px;
+            background: var(--brand);
+            border-radius: 2px;
+        }
+
+        /* ==== About section ==== */
+        .about {
+            padding: 48px 0 96px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: 1.1fr 0.9fr;
+            gap: 56px;
+        }
+
+        @media (max-width: 980px) {
+            .grid {
+                grid-template-columns: 1fr;
+                gap: 32px;
+            }
+        }
+
+        /* ==== Text styles ==== */
+        .eyebrow {
+            color: var(--brand);
+            font-weight: 700;
+            font-size: 14px;
+            letter-spacing: 0.1em;
+        }
+
+        .h1 {
+            font-family: Rajdhani, sans-serif;
+            font-weight: 700;
+            font-size: clamp(28px, 4vw, 42px);
+            line-height: 1.1;
+            margin: 0.5em 0 1em;
+        }
+
+        .h1 .accent {
+            position: relative;
+            display: inline-block;
+        }
+
+        .h1 .accent::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: -6px;
+            width: 64px;
+            height: 5px;
+            background: var(--brand);
+            border-radius: 3px;
+        }
+
+        .lede {
+            color: var(--muted);
+            line-height: 1.7;
+            font-size: 16px;
+            margin-bottom: 22px;
+        }
+
+        /* ==== Feature list ==== */
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px 28px;
+            margin: 20px 0;
+        }
+
+        @media (max-width: 620px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        .feat {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            font-weight: 600;
+        }
+
+        .icon {
+            width: 26px;
+            height: 26px;
+            display: grid;
+            place-items: center;
+            color: var(--brand);
+        }
+
+        /* ==== Contact row ==== */
+        .callrow {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 22px;
+            margin-top: 22px;
+        }
+
+        .phonecard {
+            display: flex;
+            align-items: center;
+            gap: 14px;
+            background: #fff;
+            border: 1px solid var(--ring);
+            padding: 12px 16px;
+            border-radius: 12px;
+        }
+
+        .phonebubble {
+            width: 44px;
+            height: 44px;
+            border-radius: 12px;
+            background: var(--brand);
+            display: grid;
+            place-items: center;
+            color: #fff;
+        }
+
+        .ph-label {
+            font-size: 14px;
+            color: var(--muted);
+            font-weight: 600;
+        }
+
+        .ph-number {
+            font-weight: 800;
+            letter-spacing: 0.3px;
+        }
+
+        /* ==== Button ==== */
+        .cta {
+            background: var(--brand);
+            color: #fff;
+            border: none;
+            border-radius: 12px;
+            font-weight: 800;
+            padding: 14px 22px;
+            cursor: pointer;
+        }
+
+        .cta:hover {
+            opacity: 0.9;
+        }
+
+        /* ==== Image ==== */
+        .photo {
+            border-radius: 18px;
+            overflow: hidden;
+            border: 1px solid var(--ring);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+        }
+
+        .photo img {
+            width: 100%;
+            aspect-ratio: 4/3;
+            object-fit: cover;
+        }
+
+        .section-tag {
+            margin-top: 56px;
+            font-family: Rajdhani, sans-serif;
+            font-weight: 700;
+            color: #ff7f26;
+            opacity: 0.8;
+            letter-spacing: 0.08em;
+        }
+    </style>
+</head>
+<body>
+
+<!-- ==== HEADER ==== -->
+<header class="site-header">
+    <div class="wrap head-inner">
+        <a class="brand" href="#">Delex<span class="dot"></span></a>
+
+        <nav class="nav">
+            <a href="#">HOME</a>
+            <a class="active" href="#">ABOUT</a>
+            <a href="#">SERVICES</a>
+            <a href="#">BLOG</a>
+            <a href="#">PAGES</a>
+            <a href="#">CONTACT</a>
+        </nav>
+    </div>
+</header>
+
+<!-- ==== ABOUT SECTION ==== -->
+<section class="about wrap">
+    <div class="grid">
+
+        <!-- Left side -->
+        <div>
+            <div class="eyebrow">ABOUT US</div>
+            <h1 class="h1">
+                Empowering Brands with <span class="accent">Creative &amp; Digital Excellence</span>
+            </h1>
+
+            <p class="lede">
+                We’re a creative agency focused on branding, UI/UX, and digital storytelling.
+                From concept to execution, we design experiences that connect and inspire.
+                Our team crafts solutions that are both visually stunning and performance-driven.
+            </p>
+
+            <!-- Features list -->
+            <div class="features">
+                <div class="feat">
+                    <span class="icon">🏆</span> Design Awards
+                </div>
+                <div class="feat">
+                    <span class="icon">👩‍🎨</span> Creative Team
+                </div>
+                <div class="feat">
+                    <span class="icon">⚡</span> Fast Delivery
+                </div>
+                <div class="feat">
+                    <span class="icon">💎</span> Transparent Pricing
+                </div>
+            </div>
+
+            <!-- Contact section -->
+            <div class="callrow">
+                <div class="phonecard">
+                    <div class="phonebubble">📞</div>
+                    <div>
+                        <div class="ph-label">Call Us to Start Your Project</div>
+                        <div class="ph-number">+92 300 1234567</div>
+                    </div>
+                </div>
+
+                <button class="cta">Get a Quote</button>
+            </div>
+
+            <div class="section-tag">TEAM MEMBERS</div>
+        </div>
+
+        <!-- Right side -->
+        <div class="photo">
+            <img src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?q=80&w=1600&auto=format&fit=crop" alt="Creative team working">
+        </div>
+    </div>
+</section>
+
+</body>
+</html>

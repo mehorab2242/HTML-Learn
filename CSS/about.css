@@ -1,0 +1,51 @@
+/* ====== RESET ====== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: Arial, sans-serif; color: #222; background: #fff; line-height: 1.6; }
+
+/* COLORS */
+:root {
+    --orange:#ff6a00;
+    --muted:#6b6b6b;
+}
+
+/* HEADER */
+.site-header { background:#fff; border-bottom:1px solid #eee; }
+.nav-wrap { max-width:1150px; margin:auto; padding:14px 16px; display:flex; justify-content:space-between; align-items:center; }
+.logo { font-size:28px; font-weight:800; color:var(--orange); }
+.nav ul { list-style:none; display:flex; gap:20px; }
+.nav a { text-decoration:none; color:#333; font-size:15px; }
+.nav a:hover, .nav a.active { color:var(--orange); font-weight:700; }
+
+/* LAYOUT */
+.container { max-width:1150px; margin:auto; padding:40px 16px; }
+.two-col { display:flex; gap:40px; align-items:flex-start; }
+.col { flex:1; }
+
+/* ABOUT TEXT */
+.kicker { color:var(--orange); font-weight:700; margin-bottom:8px; }
+.title { font-size:34px; font-weight:800; margin-bottom:10px; }
+.underline { width:120px; height:5px; background:var(--orange); border-radius:4px; margin:8px 0 16px; }
+.lead { color:var(--muted); margin-bottom:20px; }
+
+/* FEATURES */
+.features { display:grid; grid-template-columns:1fr 1fr; gap:15px; margin-bottom:24px; }
+.feature { display:flex; gap:10px; font-weight:600; }
+.icon { background:#fff3ea; padding:6px; border-radius:6px; }
+
+/* CALL SECTION */
+.call-box { display:flex; align-items:center; gap:14px; margin-bottom:22px; }
+.call-icon { width:50px; height:50px; background:var(--orange); color:#fff; display:flex; align-items:center; justify-content:center; border-radius:8px; }
+.phone { color:var(--orange); font-weight:800; margin-top:4px; }
+
+.btn { background:var(--orange); color:#fff; padding:12px 20px; border-radius:8px; text-decoration:none; display:inline-block; margin-bottom:20px; }
+.btn:hover { opacity:0.9; }
+
+.about-photo { width:100%; border-radius:8px; border:1px solid #eee; }
+
+/* FOOT LABEL */
+.foot-label { margin-top:10px; color:#999; font-size:13px; font-weight:700; }
+
+/* RESPONSIVE */
+@media (max-width:900px){
+    .two-col { flex-direction:column; }
+}

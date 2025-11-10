@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Zay Shop – Demo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="CSS/homepage.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/3b8a4e4e0c.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- Topbar -->
+<div class="topbar">
+    <div class="container topbar__row">
+        <div class="topbar__left">
+            <span><i class="fa-regular fa-envelope"></i> info@company.com</span>
+            <span class="divider">|</span>
+            <span><i class="fa-solid fa-phone"></i> 010-020-0340</span>
+        </div>
+        <div class="topbar__right">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        </div>
+    </div>
+</div>
+
+<!-- Header / Navbar -->
+<header class="header">
+    <div class="container nav">
+        <a class="logo" href="#">Zay</a>
+
+        <input type="checkbox" id="nav-toggle" class="nav__toggle">
+        <label for="nav-toggle" class="nav__burger" aria-label="Toggle navigation">
+            <span></span><span></span><span></span>
+        </label>
+
+        <nav class="nav__menu">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Shop</a>
+            <a href="#">Contact</a>
+        </nav>
+
+        <div class="nav__icons">
+            <button aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button aria-label="User"><i class="fa-regular fa-user"></i></button>
+            <button aria-label="Cart" class="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span class="badge">7</span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<!-- Hero -->
+<section class="hero">
+    <div class="container hero__grid">
+        <div class="hero__text">
+            <h1>Proident occaecat</h1>
+            <p class="lead">Aliquip ex ea commodo consequat</p>
+            <p class="muted">
+                You are permitted to use this Zay CSS template for your commercial websites.
+                You are <strong>not permitted</strong> to re-distribute the template ZIP file in any kind of template collection websites.
+            </p>
+            <div class="hero__dots">
+                <span class="dot active"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+        <div class="hero__image">
+            <div class="splash"></div>
+            <img src="https://images.unsplash.com/photo-1585238342028-4bbc3e2bd345?q=80&w=900&auto=format&fit=crop" alt="Product bottle">
+        </div>
+    </div>
+</section>
+
+<!-- Categories -->
+<section class="section">
+    <div class="container">
+        <div class="section__head center">
+            <h2>Categories of The Month</h2>
+            <p class="muted small">
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                officia deserunt mollit anim id est laborum.
+            </p>
+        </div>
+
+        <div class="cat__grid">
+            <!-- Watch -->
+            <div class="cat">
+                <div class="cat__thumb">
+                    <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=900&auto=format&fit=crop" alt="Watch">
+                </div>
+                <h4>Watches</h4>
+                <a class="btn" href="#">Go Shop</a>
+            </div>
+            <!-- Shoes -->
+            <div class="cat">
+                <div class="cat__thumb">
+                    <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=900&auto=format&fit=crop" alt="Shoes">
+                </div>
+                <h4>Shoes</h4>
+                <a class="btn" href="#">Go Shop</a>
+            </div>
+            <!-- Accessories -->
+            <div class="cat">
+                <div class="cat__thumb">
+                    <img src="https://images.unsplash.com/photo-1516715094483-75da7dee9756?q=80&w=900&auto=format&fit=crop" alt="Sunglasses">
+                </div>
+                <h4>Accessories</h4>
+                <a class="btn" href="#">Go Shop</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Products -->
+<section class="section gray">
+    <div class="container">
+        <div class="section__head center">
+            <h2>Featured Product</h2>
+            <p class="muted small">
+                Reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident.
+            </p>
+        </div>
+
+        <div class="card__grid">
+            <!-- Card 1 -->
+            <article class="card">
+                <div class="card__media">
+                    <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=1200&auto=format&fit=crop" alt="Gym Weight">
+                </div>
+                <div class="card__body">
+                    <div class="stars" aria-label="rating 4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Gym Weight</h3>
+                    <p class="muted small">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt in culpa qui officia deserunt.
+                    </p>
+                    <div class="card__meta">
+                        <a class="link small" href="#">Reviews (24)</a>
+                        <span class="price">$240.00</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 2 -->
+            <article class="card">
+                <div class="card__media">
+                    <img src="https://images.unsplash.com/photo-1603796846097-bee99e4a601f?q=80&w=1200&auto=format&fit=crop" alt="Smart Watch">
+                </div>
+                <div class="card__body">
+                    <div class="stars" aria-label="rating 4">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                    </div>
+                    <h3>Cloud Nike Shoes</h3>
+                    <p class="muted small">
+                        Aenean gravida dignissim finibus. Nullam ipsum diam, posuere vitae pharetra sed, commodo ullamcorper.
+                    </p>
+                    <div class="card__meta">
+                        <a class="link small" href="#">Reviews (48)</a>
+                        <span class="price">$480.00</span>
+                    </div>
+                </div>
+            </article>
+
+            <!-- Card 3 -->
+            <article class="card">
+                <div class="card__media">
+                    <img src="https://images.unsplash.com/photo-1519183071298-a2962be96f83?q=80&w=1200&auto=format&fit=crop" alt="Camera">
+                </div>
+                <div class="card__body">
+                    <div class="stars" aria-label="rating 5">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Summer Addides Shoes</h3>
+                    <p class="muted small">
+                        Curabitur ac mi sit amet diam luctus porta. Phasellus pulvinar sagittis diam, et scelerisque ipsum lobortis nec.
+                    </p>
+                    <div class="card__meta">
+                        <a class="link small" href="#">Reviews (74)</a>
+                        <span class="price">$360.00</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container footer__grid">
+        <div class="footer__brand">
+            <h3>Zay Shop</h3>
+            <ul class="list">
+                <li><i class="fa-solid fa-location-dot"></i> 123 Consectetur at ligula 10660</li>
+                <li><i class="fa-solid fa-phone"></i> 010-020-0340</li>
+                <li><i class="fa-regular fa-envelope"></i> info@company.com</li>
+            </ul>
+            <div class="social">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div>
+            <h4>Products</h4>
+            <ul class="list">
+                <li><a href="#">Luxury</a></li>
+                <li><a href="#">Sport Wear</a></li>
+                <li><a href="#">Men’s Shoes</a></li>
+                <li><a href="#">Women’s Shoes</a></li>
+                <li><a href="#">Popular Dress</a></li>
+                <li><a href="#">Gym Accessories</a></li>
+                <li><a href="#">Sport Shoes</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Further Info</h4>
+            <ul class="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Shop Locations</a></li>
+                <li><a href="#">FAQs</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <h4>Newsletter</h4>
+            <p class="muted small">Get updates right in your inbox.</p>
+            <form class="newsletter" onsubmit="return false;">
+                <input type="email" placeholder="Email address" aria-label="Email">
+                <button class="btn">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="container copyright">
+        <p>Copyright © 2021 Company Name | Designed by TemplateMo</p>
+    </div>
+</footer>
+</body>
+</html>
