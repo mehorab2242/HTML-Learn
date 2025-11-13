@@ -46,9 +46,12 @@
 
         <div class="nav__icons">
             <button aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <button aria-label="User"><i class="fa-regular fa-user"></i></button>
-            <button aria-label="Cart" class="cart">
-                <i class="fa-solid fa-cart-shopping"></i>
+            <button aria-label="Wishlist" class="icon-badge">
+                <i class="fa-regular fa-heart"></i>
+                <span class="badge">29</span>
+            </button>
+            <button aria-label="Cart" class="icon-badge">
+                <i class="fa-solid fa-bag-shopping"></i>
                 <span class="badge">7</span>
             </button>
         </div>
@@ -65,16 +68,24 @@
                 You are permitted to use this Zay CSS template for your commercial websites.
                 You are <strong>not permitted</strong> to re-distribute the template ZIP file in any kind of template collection websites.
             </p>
-            <div class="hero__dots">
-                <span class="dot active"></span>
-                <span class="dot"></span>
-                <span class="dot"></span>
-            </div>
         </div>
         <div class="hero__image">
             <div class="splash"></div>
-            <img src="https://images.unsplash.com/photo-1585238342028-4bbc3e2bd345?q=80&w=900&auto=format&fit=crop" alt="Product bottle">
+            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=750&auto=format&fit=crop" alt="Curology bottle">
         </div>
+        <div class="hero__controls" aria-hidden="true">
+            <button class="hero__control prev" aria-label="Previous slide">
+                <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="hero__control next" aria-label="Next slide">
+                <i class="fa-solid fa-chevron-right"></i>
+            </button>
+        </div>
+    </div>
+    <div class="hero__dots" role="tablist" aria-label="Slide selection">
+        <button class="dot active" aria-label="Slide 1"></button>
+        <button class="dot" aria-label="Slide 2"></button>
+        <button class="dot" aria-label="Slide 3"></button>
     </div>
 </section>
 
@@ -93,7 +104,7 @@
             <!-- Watch -->
             <div class="cat">
                 <div class="cat__thumb">
-                    <img src="https://images.unsplash.com/photo-1524805444758-089113d48a6d?q=80&w=900&auto=format&fit=crop" alt="Watch">
+                    <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=900&auto=format&fit=crop" alt="Classic wrist watch">
                 </div>
                 <h4>Watches</h4>
                 <a class="btn" href="#">Go Shop</a>
@@ -101,7 +112,7 @@
             <!-- Shoes -->
             <div class="cat">
                 <div class="cat__thumb">
-                    <img src="https://images.unsplash.com/photo-1608231387042-66d1773070a5?q=80&w=900&auto=format&fit=crop" alt="Shoes">
+                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=900&auto=format&fit=crop" alt="Running shoes">
                 </div>
                 <h4>Shoes</h4>
                 <a class="btn" href="#">Go Shop</a>
@@ -109,7 +120,7 @@
             <!-- Accessories -->
             <div class="cat">
                 <div class="cat__thumb">
-                    <img src="https://images.unsplash.com/photo-1516715094483-75da7dee9756?q=80&w=900&auto=format&fit=crop" alt="Sunglasses">
+                    <img src="https://images.unsplash.com/photo-1503342394128-c104d54dba01?q=80&w=900&auto=format&fit=crop" alt="Designer sunglasses">
                 </div>
                 <h4>Accessories</h4>
                 <a class="btn" href="#">Go Shop</a>
@@ -133,13 +144,16 @@
             <!-- Card 1 -->
             <article class="card">
                 <div class="card__media">
-                    <img src="https://images.unsplash.com/photo-1484704849700-f032a568e944?q=80&w=1200&auto=format&fit=crop" alt="Gym Weight">
+                    <img src="https://images.unsplash.com/photo-1612281142611-88f9c89c2388?q=80&w=1200&auto=format&fit=crop" alt="Gym flashlight">
                 </div>
                 <div class="card__body">
-                    <div class="stars" aria-label="rating 4">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="card__header">
+                        <div class="stars" aria-label="rating 4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="price">$240.00</span>
                     </div>
                     <h3>Gym Weight</h3>
                     <p class="muted small">
@@ -147,7 +161,6 @@
                     </p>
                     <div class="card__meta">
                         <a class="link small" href="#">Reviews (24)</a>
-                        <span class="price">$240.00</span>
                     </div>
                 </div>
             </article>
@@ -155,13 +168,16 @@
             <!-- Card 2 -->
             <article class="card">
                 <div class="card__media">
-                    <img src="https://images.unsplash.com/photo-1603796846097-bee99e4a601f?q=80&w=1200&auto=format&fit=crop" alt="Smart Watch">
+                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop" alt="Smart watch">
                 </div>
                 <div class="card__body">
-                    <div class="stars" aria-label="rating 4">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
+                    <div class="card__header">
+                        <div class="stars" aria-label="rating 4">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                        <span class="price">$480.00</span>
                     </div>
                     <h3>Cloud Nike Shoes</h3>
                     <p class="muted small">
@@ -169,7 +185,6 @@
                     </p>
                     <div class="card__meta">
                         <a class="link small" href="#">Reviews (48)</a>
-                        <span class="price">$480.00</span>
                     </div>
                 </div>
             </article>
@@ -177,13 +192,16 @@
             <!-- Card 3 -->
             <article class="card">
                 <div class="card__media">
-                    <img src="https://images.unsplash.com/photo-1519183071298-a2962be96f83?q=80&w=1200&auto=format&fit=crop" alt="Camera">
+                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=1200&auto=format&fit=crop" alt="Polaroid camera">
                 </div>
                 <div class="card__body">
-                    <div class="stars" aria-label="rating 5">
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
+                    <div class="card__header">
+                        <div class="stars" aria-label="rating 5">
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <span class="price">$360.00</span>
                     </div>
                     <h3>Summer Addides Shoes</h3>
                     <p class="muted small">
@@ -191,7 +209,6 @@
                     </p>
                     <div class="card__meta">
                         <a class="link small" href="#">Reviews (74)</a>
-                        <span class="price">$360.00</span>
                     </div>
                 </div>
             </article>
