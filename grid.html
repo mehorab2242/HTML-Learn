@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Layout</title>
+    <style>
+        :root {
+            --primary: #4f46e5;
+            --bg: #f3f4f6;
+            --text: #111827;
+            --card: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        .layout {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "sidebar main"
+                "footer footer";
+            grid-template-columns: 260px 1fr;
+            gap: 20px;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        header {
+            grid-area: header;
+            background: var(--primary);
+            color: white;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        aside {
+            grid-area: sidebar;
+            background: var(--card);
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        main {
+            grid-area: main;
+        }
+
+        footer {
+            grid-area: footer;
+            background: var(--primary);
+            color: white;
+            padding: 10px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        /* Grid for stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: var(--card);
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        /* Cards grid */
+        .cards-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card);
+            padding: 20px;
+            border-radius: 8px;
+            transition: transform 0.2s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Sidebar navigation */
+        .nav {
+            list-style: none;
+            padding: 0;
+        }
+
+        .nav li {
+            padding: 10px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .nav li:hover {
+            background: #e5e7eb;
+        }
+
+        /* Responsive tweaks */
+        @media (max-width: 768px) {
+            .layout {
+                grid-template-areas:
+                    "header"
+                    "main"
+                    "footer";
+                grid-template-columns: 1fr;
+            }
+
+            aside {
+                display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="layout">
+
+    <header>
+        <h1>Dashboard Overview</h1>
+    </header>
+
+    <aside>
+        <h3>Navigation</h3>
+        <ul class="nav">
+            <li>Home</li>
+            <li>Analytics</li>
+            <li>Settings</li>
+            <li>Profile</li>
+        </ul>
+    </aside>
+
+    <main>
+        <!-- Stats Section -->
+        <section>
+            <h2>Quick Stats</h2>
+            <div class="stats-grid">
+                <div class="stat-card">
+                    <h3>120K</h3>
+                    <p>Visitors</p>
+                </div>
+                <div class="stat-card">
+                    <h3>8.4K</h3>
+                    <p>Sales</p>
+                </div>
+                <div class="stat-card">
+                    <h3>2.1K</h3>
+                    <p>New Users</p>
+                </div>
+                <div class="stat-card">
+                    <h3>98%</h3>
+                    <p>Uptime</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section>
+            <h2>Featured Items</h2>
+            <div class="cards-grid">
+                <div class="card">Feature #1</div>
+                <div class="card">Feature #2</div>
+                <div class="card">Feature #3</div>
+                <div class="card">Feature #4</div>
+                <div class="card">Feature #5</div>
+                <div class="card">Feature #6</div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        &copy; 2025 CSS Grid Practicum
+    </footer>
+
+</div>
+
+</body>
+</html>
