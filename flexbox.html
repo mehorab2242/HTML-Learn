@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn Flexbox in CSS</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            background-color: #1ec3ee;
+            color: #333;
+        }
+        .container {
+            background: #eecf95;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .demo-box {
+            border: 2px dashed #aaa;
+            border-radius: 8px;
+            padding: 20px;
+            min-height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+        }
+        .box {
+            background-color: #1ec3ee;
+            padding: 20px;
+            color: white;
+            font-weight: bold;
+            border-radius: 10px;
+        }
+        .code {
+            background-color: #272727;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 4px;
+            overflow-x: auto;
+            font-family: monospace;
+        }
+    </style>
+</head>
+<body>
+<h1>Learn Flexbox</h1>
+
+<div class="container">
+    <h2>1. Basic Flexbox</h2>
+    <p>Start by turning a container into a flex container using <code>display: flex;</code>:</p>
+    <div class="code">.container { display: flex; }</div>
+    <div class="demo-box" style="display: flex;">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</div>
+
+<div class="container">
+    <h2>2. Flex Direction</h2>
+    <p>Use <code>flex-direction</code> to control the direction of the flex items:</p>
+    <div class="code">.container { flex-direction: column; }</div>
+    <div class="demo-box" style="display: flex; flex-direction: column;">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</div>
+
+<div class="container">
+    <h2>3. Justify Content</h2>
+    <p>Use <code>justify-content</code> to control alignment along the main axis:</p>
+    <div class="code">.container { justify-content: space-evenly; }</div>
+    <div class="demo-box" style="display: flex; justify-content: space-evenly;">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</div>
+
+<div class="container">
+    <h2>4. Align Items</h2>
+    <p>Use <code>align-items</code> to control alignment along the cross axis:</p>
+    <div class="code">.container { align-items: center; }</div>
+    <div class="demo-box" style="display: flex; align-items: center; height: 200px;">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+    </div>
+</div>
+</body>
+</html>
