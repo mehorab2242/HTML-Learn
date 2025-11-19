@@ -14,15 +14,15 @@
 <div class="topbar">
     <div class="container topbar__row">
         <div class="topbar__left">
-            <span><i class="fa-regular fa-envelope"></i> info@company.com</span>
+            <span><img src="icons/mail.svg" alt="mail"> info@company.com</span>
             <span class="divider">|</span>
-            <span><i class="fa-solid fa-phone"></i> 010-020-0340</span>
+            <span><img src="icons/phone.svg" alt="phone"> 010-020-0340</span>
         </div>
         <div class="topbar__right">
-            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter"></i></a>
-            <a href="#"><i class="fa-brands fa-instagram"></i></a>
-            <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+            <a href="#"><img src="icons/twitter.svg" alt="Twitter"></a>
+            <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+            <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
         </div>
     </div>
 </div>
@@ -45,14 +45,16 @@
         </nav>
 
         <div class="nav__icons">
-            <button aria-label="Search"><i class="fa-solid fa-magnifying-glass"></i></button>
-            <button aria-label="Wishlist" class="icon-badge">
-                <i class="fa-regular fa-heart"></i>
-                <span class="badge">29</span>
+            <button aria-label="Search">
+                <img src="icons/search.svg" alt="Search">
             </button>
             <button aria-label="Cart" class="icon-badge">
-                <i class="fa-solid fa-bag-shopping"></i>
+                <img src="icons/shopping-cart.svg" alt="Cart">
                 <span class="badge">7</span>
+            </button>
+            <button aria-label="User" class="icon-badge">
+                <img src="icons/user.svg" alt="User">
+                <span class="badge">+99</span>
             </button>
         </div>
     </div>
@@ -71,20 +73,12 @@
         </div>
         <div class="hero__image">
             <div class="splash"></div>
-            <img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?q=80&w=750&auto=format&fit=crop" alt="Curology bottle">
-        </div>
-        <div class="hero__controls" aria-hidden="true">
-<!--            <button class="hero__control prev" aria-label="Previous slide">-->
-<!--                <i class="fa-solid fa-chevron-left"></i>-->
-<!--            </button>-->
-<!--            <button class="hero__control next" aria-label="Next slide">-->
-<!--                <i class="fa-solid fa-chevron-right"></i>-->
-<!--            </button>-->
+            <img src="images/curology.jpg" alt="Curology bottle" height="450" width="220">
         </div>
     </div>
     <div class="hero__dots" role="tablist" aria-label="Slide selection">
-        <button class="dot active" aria-label="Slide 1"></button>
-        <button class="dot" aria-label="Slide 2"></button>
+        <button class="dot" aria-label="Slide 1"></button>
+        <button class="dot active" aria-label="Slide 2"></button>
         <button class="dot" aria-label="Slide 3"></button>
     </div>
 </section>
@@ -104,7 +98,7 @@
             <!-- Watch -->
             <div class="cat">
                 <div class="cat__thumb">
-                    <img src="https://images.unsplash.com/photo-1524592094714-0f0654e20314?q=80&w=900&auto=format&fit=crop" alt="Classic wrist watch">
+                    <img src="images/black-watch.jpg" alt="Classic wrist watch">
                 </div>
                 <h4>Watches</h4>
                 <a class="btn" href="#">Go Shop</a>
@@ -112,7 +106,7 @@
             <!-- Shoes -->
             <div class="cat">
                 <div class="cat__thumb">
-                    <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?q=80&w=900&auto=format&fit=crop" alt="Running shoes">
+                    <img src="images/nike-shoe.jpg" alt="Nike shoe">
                 </div>
                 <h4>Shoes</h4>
                 <a class="btn" href="#">Go Shop</a>
@@ -120,7 +114,7 @@
             <!-- Accessories -->
             <div class="cat">
                 <div class="cat__thumb">
-                    <img src="https://images.unsplash.com/photo-1503342394128-c104d54dba01?q=80&w=900&auto=format&fit=crop" alt="Designer sunglasses">
+                    <img src="images/sunglass.jpg" alt="Designer sunglasses">
                 </div>
                 <h4>Accessories</h4>
                 <a class="btn" href="#">Go Shop</a>
@@ -144,7 +138,7 @@
             <!-- Card 1 -->
             <article class="card">
                 <div class="card__media">
-                    <img src="https://images.unsplash.com/photo-1612281142611-88f9c89c2388?q=80&w=1200&auto=format&fit=crop" alt="Gym flashlight">
+                    <img src="images/light.jpg" alt="light image">
                 </div>
                 <div class="card__body">
                     <div class="card__header">
@@ -168,7 +162,7 @@
             <!-- Card 2 -->
             <article class="card">
                 <div class="card__media">
-                    <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop" alt="Smart watch">
+                    <img src="images/red-watch.jpg" alt="watch image">
                 </div>
                 <div class="card__body">
                     <div class="card__header">
@@ -192,7 +186,7 @@
             <!-- Card 3 -->
             <article class="card">
                 <div class="card__media">
-                    <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&w=1200&auto=format&fit=crop" alt="Polaroid camera">
+                    <img src="images/camera.jpg" alt="camera image">
                 </div>
                 <div class="card__body">
                     <div class="card__header">
@@ -222,16 +216,10 @@
         <div class="footer__brand">
             <h3>Zay Shop</h3>
             <ul class="list">
-                <li><i class="fa-solid fa-location-dot"></i> 123 Consectetur at ligula 10660</li>
-                <li><i class="fa-solid fa-phone"></i> 010-020-0340</li>
-                <li><i class="fa-regular fa-envelope"></i> info@company.com</li>
+                <li><img src="icons/map-pin.svg" alt="location"> 123 Consectetur at ligula 10660</li>
+                <li><img src="icons/phone.svg" alt="phone"> 010-020-0340</li>
+                <li><img src="icons/mail.svg" alt="mail"> info@company.com</li>
             </ul>
-            <div class="social">
-                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
-            </div>
         </div>
 
         <div>
@@ -257,19 +245,23 @@
                 <li><a href="#">Contact</a></li>
             </ul>
         </div>
-
-        <div>
-            <h4>Newsletter</h4>
-            <p class="muted small">Get updates right in your inbox.</p>
-            <form class="newsletter" onsubmit="return false;">
-                <input type="email" placeholder="Email address" aria-label="Email">
-                <button class="btn">Subscribe</button>
-            </form>
-        </div>
     </div>
 
-    <div class="container copyright">
-        <p>Copyright © 2021 Company Name | Designed by TemplateMo</p>
+    <div class="footer__bottom">
+        <div class="container footer__bottom-content">
+            <div class="footer__social">
+                <a href="#"><img src="icons/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="icons/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="icons/twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="icons/linkedin.svg" alt="LinkedIn"></a>
+            </div>
+            <div class="footer__newsletter">
+                <form class="newsletter" onsubmit="return false;">
+                    <input type="email" placeholder="Email address" aria-label="Email">
+                    <button class="btn">Subscribe</button>
+                </form>
+            </div>
+        </div>
     </div>
 </footer>
 </body>
